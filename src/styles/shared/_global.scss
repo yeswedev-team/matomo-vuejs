@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	font-family: $font-primary;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--black-default);
+	background: white;
+	overflow-x: hidden;
+}
+
+// a {
+// 	font-weight: inherit;
+// 	font-size: inherit;
+// 	color: $blue;
+// 	transition: $transition-basic;
+
+// 	&:hover,
+// 	&:active,
+// 	&:focus {
+// 		color: $indigo;
+// 	}
+// }
+
+ol,
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.vue-notification-group {
+	top: 15px !important;
+	right: 10px !important;
+
+	.vue-notification-wrapper {
+		overflow: visible;
+
+		.vue-notification {
+			border-radius: 6px;
+			border-left: none;
+			box-shadow: $shadow-large;
+			font-size: 14px;
+		}
+	}
+}

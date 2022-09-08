@@ -1,0 +1,86 @@
+.h1 {
+  font-family: $font-secondary;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  
+  &.h1--light {
+    font-weight: 400;
+  }
+}
+
+.h2 {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+
+  @media (max-height: 800px) {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  
+  &.h2--light {
+    font-weight: 400;
+  }
+}
+
+.h3 {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+
+  @media (max-height: 800px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.h4 {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+
+  @media (max-height: 800px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.h5 {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.paragraph {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.paragraph-small {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.small-information {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}

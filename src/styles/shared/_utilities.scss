@@ -1,0 +1,131 @@
+// Hide something only visually => better for seo and screen readers
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+// text flickers when transform: scale
+.no-flickr {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+	backface-visibility:         hidden;
+	filter: blur(.0px);
+}
+
+.container-custom {
+	@apply w-full px-8;
+}
+
+.text-success {
+	color: $green;
+}
+.text-info {
+	color: $blue;
+}
+.text-warning {
+	color: $orange;
+}
+.text-alert {
+	color: $red;
+}
+
+.has-box-shadow-1 {
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+							0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.has-box-shadow-2 {
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.has-box-shadow-3 {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+.has-box-shadow-4 {
+	box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.05),
+							2px 4px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.has-box-shadow-5 {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
+							0px 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.has-background-blur {
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+}
+
+.has-transition-dynamic {
+	transition: $transition-dynamic;
+}
+.has-transition-dynamic-fast {
+	transition: $transition-dynamic-fast;
+}
+.has-transition-basic {
+	transition: $transition-basic;
+}
+
+.has-font-primary {
+	font-family: $font-primary;
+}
+.has-font-secondary {
+	font-family: $font-secondary;
+}
+
+.custom-scrollbar {
+	&::-webkit-scrollbar {
+    height: 10px; /* height of horizontal scrollbar */
+    width: 10px; /* width of vertical scrollbar */
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 0px solid transparent;
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+	&.custom-scrollbar--purple {
+		&::-webkit-scrollbar-thumb {
+			background-color: rgba(66, 43, 123, 0.8);
+		}
+	}
+
+	&.custom-scrollbar--purple-bg {
+		&::-webkit-scrollbar {
+			background-color: rgba(66, 43, 123, 0.8);
+		}
+	}
+
+	&.custom-scrollbar--white-bg {
+		&::-webkit-scrollbar {
+			background-color: rgba(255, 255, 255, 0.8);
+		}
+	}
+
+	&.custom-scrollbar--grey-bg {
+		&::-webkit-scrollbar {
+			background-color: rgb(226, 226, 226);
+		}
+	}
+}
+
+.has-transition-dynamic-fast {
+	transition: $transition-dynamic-fast;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

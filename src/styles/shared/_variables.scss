@@ -1,0 +1,55 @@
+/* ** COLORS BrightClue ** */
+:root {
+  --dark-blue: #00388d;
+  --blue: #3490dc;
+  --indigo: #6574cd;
+  --purple: #9561e2;
+  --pink: #f66d9b;
+  --red: #e3342f;
+  --orange: #f6993f;
+  --yellow: #ffed4a;
+  --green: #38c172;
+  --teal: #4dc0b5;
+  --cyan: #6cb2eb;
+}
+
+/* ** COLORS Basic ** */
+$dark-blue: var(--dark-blue);
+$blue: var(--blue);
+$indigo: var(--indigo);
+$purple: var(--purple);
+$pink: var(--pink);
+$red: var(--red);
+$orange: var(--orange);
+$yellow: var(--yellow);
+$green: var(--green);
+$teal: var(--teal);
+$cyan: var(--cyan);
+
+
+/* ** FONTS ** */
+// Families
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Cuyabra', 'Inter', sans-serif;
+
+
+/* ** TRANSITIONS ** */
+$transition-basic: all 0.2s ease-in-out;
+$transition-dynamic: all 0.4s cubic-bezier(.84,.02,.22,.99);
+$transition-dynamic-fast: all 0.2s cubic-bezier(.84,.02,.22,.99);
+// Easings
+$ease-dynamic: cubic-bezier(.84,.02,.22,.99);
+
+
+/* ** Breakpoints ** */
+$xs-break: 360px; // Tailwind custom
+$sm-break: 640px; // Tailwind
+$md-break: 768px; // Tailwind
+$lg-break: 1024px; // Tailwind
+$xl-break: 1280px; // Tailwind
+$xxl-break: 1536px; // Tailwind
+
+/* ** Box shadows ** */
+$shadow-large: 0 10px 40px 0 rgb(41 48 51 / 20%);
+$shadow-medium: 0 7px 20px 0 rgb(41 48 51 / 20%);
+$shadow-small: 0 5px 10px 0 rgb(41 48 51 / 20%);
