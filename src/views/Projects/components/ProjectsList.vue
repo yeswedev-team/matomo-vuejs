@@ -96,10 +96,12 @@ export default defineComponent({
     goToProject(project: Project) {
       const { actionsBeforeProjectClicked } = this.store.state.matomo;
       MatomoService.eventProjectClicked(project.name, actionsBeforeProjectClicked);
+
       this.$notify({
         text: `Project clicked. Actions count done before : ${this.store.state.matomo.actionsBeforeProjectClicked}. Information sent to Matomo.`,
         type: 'success',
       });
+
       setTimeout(() => {
         this.store.commit(matomoMutations.resetActionsBeforeProjectClicked);
         this.$notify({
